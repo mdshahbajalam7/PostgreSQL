@@ -9,11 +9,12 @@ app.use(bodyparse.urlencoded({ extended: true }));
 
 app.use("/student", student);
 
-
 app.get("/", (req, res) => {
   res.send("Node.js, Express, and Postgres API");
 });
+
 const PORT = process.env.PORT;
+
 app.listen(PORT, () => {
   console.log(`App running on port http://localhost:${PORT}`);
-});
+});  
